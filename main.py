@@ -67,7 +67,7 @@ def main(con):
     create_table(con)
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     connection = sqlite3.connect("covid-stats.db")
     cursor = connection.cursor()
     main(connection)
